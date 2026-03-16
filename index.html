@@ -128,11 +128,12 @@ tbody tr{cursor:pointer;transition:background .15s}
   .h-pill{display:none}
 
   /* Nav chips */
-  .sub-bar{padding:8px 14px;gap:4px}
+  .sub-bar{padding:6px 14px;gap:4px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .sub-bar::-webkit-scrollbar{display:none}
   .sub-bar .label{display:none}
-  .chip{padding:5px 12px;font-size:10px}
+  .chip{padding:5px 12px;font-size:10px;white-space:nowrap;flex-shrink:0}
   .sep{display:none}
-  .rest-dd{font-size:10px;padding:5px 10px;max-width:140px}
+  .rest-dd{font-size:10px;padding:5px 10px;max-width:160px;flex-shrink:0;white-space:nowrap}
 
   /* Date row */
   .date-row{padding:10px 14px;gap:6px;flex-wrap:wrap}
